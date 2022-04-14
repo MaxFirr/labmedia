@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="app-title">Список пользователей</h1>
+        <div class="app-search">
+            <div class="app-search-input">
+                <button>
+                    <img src="images/search-icon.svg" alt="" />
+                </button>
+                <input type="text" placeholder='Поиск по имени или e-mail' />
+            </div>
+            <button class="app-clean">
+                <img src="images/clean-icon.svg" alt="" />
+                Очистить фильтр
+            </button>
+        </div>
+        <div class="app-sorting">
+            <p>Сортировка:</p>
+            <button class="date">Дата регистрации</button>
+            <button class="rating">Рейтинг</button>
+        </div>
+        <div class="app-table">
+            <div class="app-table-header">
+                <p>Имя пользователя</p>
+                <p>E-mail</p>
+                <p>Дата регистрации</p>
+                <p>Рейтинг</p>
+            </div>
+            <div class="app-table-content"></div>
+            <div class="app-table-pagging"></div>
+        </div>
+    </div>
+
+    <div class="app-modal">
+        <div class="app-modal-content">
+            <p>Вы уверены, что хотите удалить пользователя?</p>
+            <div class="app-modal-buttons">
+                <button class="delete">Да</button>
+                <button class="close">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/classes/Table.js"></script>
+    <script src="js/classes/TableRow.js"></script>
+    <script src="js/classes/Modal.js"></script>
+    <script src="js/classes/Paging.js"></script>
+    <script src="js/classes/Search.js"></script>
+    <script src="js/classes/Sorting.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
